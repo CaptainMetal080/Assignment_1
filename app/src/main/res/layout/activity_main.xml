@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#B3E5FC"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:backgroundTint="#29B6F6"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMI Calculator"
+        android:textColor="#E1F5FE"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="@id/toolbar"
+        app:layout_constraintTop_toTopOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#0D0D0D"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:background="@drawable/round_corner"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:text="Principle Loan Amount"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/loanamount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="$ Enter Amount"
+                android:padding="5dp"
+                android:textColorHint="#5C9FBF" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:background="@drawable/round_corner"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:text="Annual Interest Rate"
+
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/interest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="% Enter rate"
+                android:padding="5dp"
+                android:textColorHint="#5C9FBF" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:background="@drawable/round_corner"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:text="Amortization Period (years)"
+
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/period"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="Enter Amount"
+                android:padding="5dp"
+                android:textColorHint="#5C9FBF" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#80D8FF"
+            android:layout_gravity="center"
+            android:text="Calculate"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_corner"
+            android:orientation="horizontal"
+            android:backgroundTint="#E2E2E2"
+            android:layout_marginVertical="25dp"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="Results:"
+                android:textColor="#5B7D8E"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="EMI"
+                android:layout_marginHorizontal="10dp"
+                android:paddingHorizontal="10dp"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:id="@+id/result"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
