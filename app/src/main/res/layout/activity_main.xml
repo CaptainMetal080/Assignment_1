@@ -67,7 +67,7 @@
                 android:textSize="15dp"
                 android:layout_marginLeft="10dp"
                 android:padding="5dp"
-                android:text="Principle Loan Amount"
+                android:text="Principle Loan Amount ($)"
                 android:textStyle="bold" />
 
             <EditText
@@ -95,7 +95,7 @@
                 android:layout_marginLeft="10dp"
                 android:textSize="15dp"
                 android:padding="5dp"
-                android:text="Annual Interest Rate"
+                android:text="Annual Interest Rate (%)"
 
                 android:textStyle="bold" />
 
