@@ -78,7 +78,8 @@
                 android:hint="$ Enter Amount"
                 android:inputType="number|numberDecimal"
                 android:padding="5dp"
-                android:textColorHint="#5C9FBF" />
+                android:textColorHint="#5C9FBF"
+                android:singleLine="true"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -107,7 +108,8 @@
                 android:hint="% Enter rate"
                 android:inputType="number|numberDecimal"
                 android:padding="5dp"
-                android:textColorHint="#5C9FBF" />
+                android:textColorHint="#5C9FBF"
+                android:singleLine="true"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -136,7 +138,8 @@
                 android:hint="Enter Amount"
                 android:padding="5dp"
                 android:inputType="number"
-                android:textColorHint="#5C9FBF" />
+                android:textColorHint="#5C9FBF"
+                android:singleLine="true"/>
         </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
